@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!----------------------------------------------------------------------------------jquery--->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!----------------------------------------------------------------------------------bootstrap--->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCss.css">
+    <title>Home Page</title>
+</head>
+
+
+<!----------------------------------------------------------------------------------body--->
+
+<body onload="coinsInfo()">
+    <div class="header" id="myHeader">
+        <h1><span style="font-weight:bold">Cryptonite</span></h1>
+        <div class="changeCss">
+            <a class="btn" data-toggle="collapse" href="#collapseChangeCss" role="button">
+                <img src="logow.jpg" width="40px" class="imgChangeCss">
+            </a>
+            <div class="collapse" id="collapseChangeCss">
+                <div class="card card-body">Style
+                    <br><button class="bigText">+A</button><br>
+                    <button class="SmallText">-A</button><br>
+                    <button class="changeColorOfBackgroundToBlack">A</button><br>
+                    <button class="changeCssToNormal">✖</button>
+                </div>
+            </div>
+        </div>
+        <div id="spinner">Loading...</div>
+    </div>
+    <div id="backToHeader"></div>
+    <div class="bodyPage">
+        <div class="headerPage">
+            <a href="newHomePage.html">
+                <div type="button" class="homePage" id="show" onclick="startApp()">Home Page</div>
+            </a>
+            <a href="liveReports.html">
+                <div type="button" class="liveReports" id="live" onclick="live()">Live Report</div>
+            </a>
+            <a href="aboutMe.html">
+                <div type="button" class="About" id="about" onclick="showDetails()">About Me</div>
+            </a>
+
+            <input type="text" id="name" class="searchCoins" placeholder="Search..."></input>
+            <button type="submit" id="searachCoinsBtn" class="btnSubmit" onclick="search()">Search</button>
+        </div>
+    </div>
+    <div id="NewContainerAfter5Coins"></div>
+    <div id="container"></div>
+    <div class="content"></div>
+    <a href="#backToHeader" class="backToHeader">^</a>
+    <center>
+        <p><span style='font-size: 12px'>Back to header</span></p>
+    </center>
+
+    <!----------------------------------------------------------------------------------javaScript--->
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

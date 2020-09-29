@@ -1,0 +1,391 @@
+.header {
+    background-color: #3390ff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    border: 1px solid rgb(134, 134, 134);
+    color: white;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 856px;
+    padding-bottom: 1px;
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+body {
+    padding: 15px;
+    min-width: 886px;
+    max-width: 886px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#head {
+    background-color: #3390ff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    border: 1px solid rgb(134, 134, 134);
+    color: white;
+    font-weight: 700;
+}
+
+.bodyPage {
+    border: 1px solid rgb(134, 134, 134);
+}
+
+.headerPage {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-bottom: 1px solid rgb(134, 134, 134);
+}
+
+.homePage {
+    color: white;
+    background-color: #3390ff;
+    width: 105px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-top: 5px;
+    height: 30px;
+}
+
+.liveReports,
+.About {
+    width: 105px;
+    text-align: center;
+    color: #686a6e;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-top: 5px;
+    height: 30px;
+}
+
+.homePage:hover {
+    background-color: #006ef5;
+
+}
+
+.liveReports:hover,
+.About:hover,
+.btnSubmit:hover,
+.btnCss:hover {
+    background-color: #e4e4e4;
+    color: #686a6e;
+}
+
+.searchCoins {
+    margin-left: 195px;
+    color: #006ef5;
+    width: 200px;
+}
+
+.btnSubmit {
+    color: white;
+    background-color: #3390ff;
+}
+
+.rowBody {
+    display: flex;
+}
+
+.innerRowBody {
+    border: 1px solid #3390ff;
+    width: 100%;
+    height: 120px;
+}
+
+.cardCss,
+.showCoins {
+    background-color: white;
+    color: rgb(32, 32, 32);
+    width: 286px;
+    height: auto;
+    border: 1px solid rgb(134, 134, 134);
+}
+
+.cardCssMore{
+    background-color: white;
+    color: rgb(32, 32, 32);
+    width: 286px;
+    height: auto;
+    border: 1px solid rgb(134, 134, 134);
+    padding-bottom: 30px; 
+}
+
+#moreInfiBtn {
+    background-color: #3390ff;
+    color: white;
+    margin-left: 20px;
+}
+
+ul {
+    margin-left: -20px;
+}
+
+.content {
+    display: none;
+    margin-left: 20px;
+}
+
+h2 {
+    margin-left: 18px;
+}
+
+#container,
+#coinsLoad {
+    display: grid;
+    grid-template-columns: 285px 285px 285px;
+}
+
+#pCssInBox {
+    margin-left: 20px;
+}
+
+.btnCss {
+    background-color: #3390ff;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 110px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 210px;
+    margin-top: 15px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.textInnetBox {
+    margin-top: -25px;
+}
+
+/* loader button */
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #2196F3;
+    background-color: #ffffff;
+    border-color: #2196F3;
+    opacity: 100%;
+}
+
+#spinner {
+    visibility: hidden;
+    color: #2196F3;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    width: 120px;
+    font-size: 20px;
+    font-weight: 100;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    margin-top: -30px;
+    margin-left: 25%;
+    box-shadow: 5px 5px 5px #686a6e;
+    border: solid 1px black;
+}
+
+#spinner.showSpinner {
+    visibility: visible;
+}
+
+.backToHeader {
+    background-color: white;
+    color: #2196F3;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 2px #2196F3;
+    text-align: center;
+    font-size: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.backToHeader:hover {
+    background-color: #2196F3;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.SmallText,
+.bigText,
+.changeColorOfBackgroundToBlack,
+.changeCssToNormal {
+    width: 45px;
+    border: solid 1px #686a6e;
+    border-radius: 5px;
+    margin-bottom: -5px;
+}
+
+.changeColorOfBackgroundToBlack {
+    background-color: black;
+    color: white;
+}
+
+.changeCssToNormal {
+    background-color: rgb(230, 73, 73);
+    color: white;
+}
+
+.SmallText:hover,
+.bigText:hover,
+.changeColorOfBackgroundToBlack:hover,
+.changeCssToNormal:hover {
+    background-color: #c7c7c7;
+    color: black;
+}
+
+.changeCss {
+    position: fixed;
+    margin-left: -74px;
+    margin-top: 24px;
+}
+
+.card {
+    color: black;
+    text-align: center;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.imgChangeCss{
+border-radius: 50%;
+}
+
+.imgChangeCss:hover {
+    zoom: 104%;
+}
+
+/* windos after choice more 5 coins */
+.checkboxCss{
+    font-size: 30px;
+  }
+  
+  .boxAfterChoiceFiveCoins{
+    height: 290px;
+    width: 600px;
+    background-color: #3390ff;
+    border: solid 2px #686a6e;
+    box-shadow: 5px 5px 15px #686a6e;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 125px;
+  }
+  
+  .innher{
+    text-align: left;
+  }
+  
+  .delete{
+    position:relative;
+    border-radius: 5px;
+    left: 263px;
+    top: -35px;
+    color: #3390ff;
+    background-color: white;
+  
+  }
+  
+  .delete:hover{
+  color:  rgb(37, 37, 37);
+  background-color: rgb(218, 218, 218);
+  }
+  
+
+  #NewContainerAfter5Coins{
+      position: fixed;
+      z-index: 1;
+  }

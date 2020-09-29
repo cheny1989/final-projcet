@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+</head>
+</head>
+<style>
+ body {
+        padding: 15px;
+        min-width: 886px;
+        max-width: 886px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #head {
+        background-color: #3390ff;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        border: 1px solid rgb(134, 134, 134);
+        color: white;
+        font-weight: 700;
+    }
+
+
+    .bodyPage {
+        border: 1px solid rgb(134, 134, 134);
+        margin-top: -10px;
+    }
+
+    .headerPage {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+        border-bottom: 1px solid rgb(134, 134, 134);
+    }
+
+    .About{
+        color: white;
+        background-color: #3390ff;
+        width: 105px;
+        text-align: center;
+        border-radius: 5px;
+        margin-left: 20px;
+        padding-top: 5px;
+        height: 30px;
+    }
+
+    .liveReports,
+    .homePage {
+        width: 105px;
+        text-align: center;
+        color: #686a6e;
+        border-radius: 5px;
+        margin-left: 20px;
+        padding-top: 5px;
+        height: 30px;
+
+    }
+
+    .About:hover{
+        background-color: #006ef5;
+
+    }
+
+    .liveReports:hover,
+    .homePage:hover,
+    .btnSubmit:hover,
+    .btnCss:hover {
+        background-color: #e4e4e4;
+        color:  #686a6e;
+    }
+
+    .serchCoins {
+        margin-left: 200px;
+        color: #006ef5;
+    }
+
+    .btnSubmit {
+        color: white;
+        background-color: #3390ff;
+    }
+
+    .rowBody {
+        display: flex;
+    }
+
+    .innerRowBody {
+        border: 1px solid #3390ff;
+        width: 100%;
+        height: 120px;
+    }
+
+    #container{
+        display: flex;
+        border: 1px solid rgb(134, 134, 134);
+        height: 305px;
+    }
+
+    .headBody{
+        border-right: 1px solid rgb(134, 134, 134);
+        width: 70%;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+    .imageBody{
+        width: 30%;
+        align-items: center;
+    }
+
+    .aboutMeH1{
+        margin-top: 20px;
+        color: #3390ff;
+        font-weight: 600;
+    }
+
+    .ContactMe{
+        width: 100%;
+    }
+
+    .backgroundColor{
+        background-color: #3390ff;
+        color: white;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    
+    .underImg{
+        background-color: #3390ff;
+        color: white;
+        height: 31px;
+        margin-top: -14px;
+        text-align: center;
+    }
+</style>
+<body>
+    <h1 id="head">Cryptonite</h1>
+    <div class="bodyPage">
+        <div class="headerPage">
+            <a href="newHomePage.html"><div type="button" class="homePage" id="show" onclick="startApp()">Home Page</div> </a>
+            <a href="liveReports.html"><div type ="button" class="liveReports" id="live" onclick= "live()">Live Report</div></a>
+            <a href="aboutMe.html"><div type="button" class="About" id="about" onclick="showDetails()">About Me</div></a>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="headBody">
+            <h1 class=aboutMeH1>About Me</h1>
+            <P><b>This prohect displat information of virtual coins from server.</b><br>
+                My name is Chen Yaacov, 30 years old, from Moshav Balfouria.
+                is studied Full stack devoloper and organizational development and consulting.
+            <div class="ContactMe">
+                <b><p class="backgroundColor">Contact Me:</p></b>
+                <p style = 'padding-left: 10px'><img src="mailLogo.jpg" width="30px"><a href="mailto:chenyaa89@gmail.com"> Email</a></p>
+                <p style = 'padding-left: 10px'></span><img src="WhatsApp_logo.png" width="30px"><a href="https://api.whatsapp.com/send?phone=972546597211"> Send Whatsapp</a></p>
+                </p>
+
+            </div>
+        </div>
+        <div class="imageBody">
+            <p><img src="imageChen.png" width="256px"></p>
+            <p class = "underImg">My image</p>
+        </div>
+    </div>
+</body>
+</html>

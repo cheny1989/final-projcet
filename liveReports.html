@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <link rel="stylesheet" href="styleCss.css"> -->
+<title>Live Reports</title>
+</head>
+</head>
+<style>
+ body {
+        padding: 15px;
+        min-width: 886px;
+        max-width: 886px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #head {
+        background-color: #3390ff;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        border: 1px solid rgb(134, 134, 134);
+        color: white;
+        font-weight: 700;
+    }
+
+
+    .bodyPage {
+        border: 1px solid rgb(134, 134, 134);
+        margin-top: -10px;
+    }
+
+    .headerPage {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+        border-bottom: 1px solid rgb(134, 134, 134);
+    }
+
+    .liveReports{
+        color: white;
+        background-color: #3390ff;
+        width: 105px;
+        text-align: center;
+        border-radius: 5px;
+        margin-left: 20px;
+        padding-top: 5px;
+        height: 30px;
+    }
+
+    .About,
+    .homePage {
+        width: 105px;
+        text-align: center;
+        color: #686a6e;
+        border-radius: 5px;
+        margin-left: 20px;
+        padding-top: 5px;
+        height: 30px;
+
+    }
+
+    .liveReports:hover{
+        background-color: #006ef5;
+
+    }
+
+    .About:hover,
+    .homePage:hover,
+    .btnCss:hover {
+        background-color: #e4e4e4;
+        color:  #686a6e;
+    }
+
+    .btnSubmit {
+        color: white;
+        background-color: #3390ff;
+    }
+
+    .rowBody {
+        display: flex;
+    }
+
+    .innerRowBody {
+        border: 1px solid #3390ff;
+        width: 100%;
+        height: 120px;
+    }
+
+    #wishId{
+        margin-top: 20px;
+        background-color: #3390ff;
+        color: white;
+        font-size: 25px;
+        text-align: center;
+    }
+</style>
+<body>
+    <h1 id="head">Cryptonite</h1>
+    <div class="bodyPage">
+        <div class="headerPage">
+            <a href="newHomePage.html"><div type="button" class="homePage" id="show" onclick="startApp()">Home Page</div> </a>
+            <a href="liveReports.html"><div type ="button" class="liveReports" id="live" onclick= "live()">Live Report</div></a>
+            <a href="aboutMe.html"><div type="button" class="About" id="about" onclick="showDetails()">About Me</div></a>
+        </div>
+    </div>
+
+    <div id="container">
+        <p id="wishId">I wish... &#128553;</p>
+    </div>
+</body>
+</html>
